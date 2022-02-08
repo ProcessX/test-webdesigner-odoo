@@ -9,445 +9,578 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a>Odoo</a>
-        <ul>
-          <li>
-            <a>Home</a>
+    <!-- <header class="w-100 fixed-top container">
+      <nav class="navbar navbar-expand-lg justify-content-between">
+        <a class="navbar-brand">Odoo</a>
+        <ul class="navbar-nav">
+          <li class="nav-item nav-item-active">
+            <a class="nav-link" href="#">Home</a>
           </li>
-          <li>
-            <a>Products</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
           </li>
-          <li>
-            <a>Pages</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
           </li>
-          <li>
-            <a>Pages</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Docs</a>
           </li>
         </ul>
 
-        <ul>
-          <li>
-            <a>Sign in</a>
+        <ul class="d-flex">
+          <li class="list-unstyled">
+            <a class="btn btn-primary" href="#">Sign in</a>
           </li>
-          <li>
-            <a>Buy now</a>
+          <li class="list-unstyled">
+            <a class="btn btn-secondary" href="#">Buy now</a>
           </li>
         </ul>
       </nav>
 
-      <div>
+      <div class="navbar">
         <a>Odoo</a>
         <button>Burger</button>
       </div>
-    </header>
+    </header> -->
 
     <main>
-      <section class="intro container">
+      <section class="intro bg-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col text-light">
+              <h1 class="font-weight-bold mb-4">Development done right</h1>
+              <p class="font-weight-medium">
+                Build a beautiful, modern website with flexible components built
+                from scratch.
+              </p>
+              <a class="btn btn-lg btn-light" href="#">Get started</a>
+              <div>
+                <p>Trusted by:</p>
+                <ul class="trustingClient__li d-flex flex-wrap">
+                  <li class="trustingClient__el">
+                    <img
+                      src="./assets/logos/google-white.svg"
+                      alt="google-white"
+                    />
+                  </li>
+                  <li class="trustingClient__el">
+                    <img
+                      src="./assets/logos/spotify-white.svg"
+                      alt="spotify-white"
+                    />
+                  </li>
+                  <li class="trustingClient__el">
+                    <img
+                      src="./assets/logos/airbnb-white.svg"
+                      alt="airbnb-white"
+                    />
+                  </li>
+                  <li class="trustingClient__el">
+                    <img
+                      src="./assets/logos/paypal-white.svg"
+                      alt="paypal-white"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-4 cardManager">
+                <div
+                  class="d-flex justify-content-between align-content-center"
+                >
+                  <h3 class="h6 font-weight-semibold">Manage cards</h3>
+                  <button class="btn btn-outline-dark btn-sm">Add new</button>
+                </div>
+
+                <div class="card cardVisualizer bg-blue-900 text-white p-4">
+                  <div class="d-flex justify-content-between">
+                    <img src="./assets/logos/mastercard.svg" alt="mastercard" />
+                    <div>Active</div>
+                  </div>
+                  <div class="mb-4">
+                    <h6
+                      class="text-sm text-uppercase font-weight-normal text-gray-200"
+                    >
+                      Card number
+                    </h6>
+                    <p>4358-7421-9256-6682</p>
+                  </div>
+                  <div>
+                    <h6
+                      class="text-sm text-uppercase font-weight-normal text-gray-200"
+                    >
+                      Name
+                    </h6>
+                    <p>John Snow</p>
+                  </div>
+                  <div>
+                    <h6
+                      class="text-sm text-uppercase font-weight-normal text-gray-200"
+                    >
+                      Expiry date
+                    </h6>
+                    <p>11/23</p>
+                  </div>
+                </div>
+
+                <ul class="beneficiary__li">
+                  <li class="beneficiary__el">
+                    <div class="d-flex justify-content-between mb-1">
+                      <h5 class="h6 font-weight-semibold m-0">Starbucks</h5>
+                      <p class="m-0">$5,50 USD</p>
+                    </div>
+                    <p class="text-sm m-0 text-gray-400">
+                      Pending - San Francisco, United States
+                    </p>
+                  </li>
+                  <li class="beneficiary__el">
+                    <div class="d-flex justify-content-between mb-1">
+                      <h5 class="h6 font-weight-semibold m-0">Nike Sports</h5>
+                      <p class="h6 m-0">$129,00 USD</p>
+                    </div>
+                    <p class="text-sm m-0 text-gray-400">
+                      Pending - Lisbon, Portugal
+                    </p>
+                  </li>
+                </ul>
+                <a href="#" class="link link--dotted">View all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tools container">
         <div class="row">
-          <div class="col">
-            <h1>Development done right</h1>
-            <p>
-              Build a beautiful, modern website with flexible components built
-              from scratch.
+          <div class="col col-12 col-lg-6 order-lg-2">
+            <h2
+              class="title--badge h6 font-weight-semibold bg-warning text-white mb-3"
+            >
+              Tools
+            </h2>
+            <h3 class="h2 font-weight-semibold text-gray-800 mb-4">
+              We build for designers and developers
+            </h3>
+            <p class="text-gray-600">
+              Get components and examples, including tons of variables that will
+              help you grow your business.
             </p>
-            <a>Get started</a>
+          </div>
+          <div class="col">
             <div>
-              <p>Trusted by:</p>
+              <h3>Awesome projects</h3>
               <ul>
                 <li>
-                  <div>Google</div>
+                  <h4>Create the new logo</h4>
+                  <div>3:50</div>
                 </li>
                 <li>
-                  <div>Spotify</div>
+                  <h4>Set up the color palette</h4>
+                  <div>4:00</div>
                 </li>
                 <li>
-                  <div>Airbnb</div>
-                </li>
-                <li>
-                  <div>Paypal</div>
+                  <h4>Wireframe and prototype</h4>
+                  <div>6:50</div>
                 </li>
               </ul>
             </div>
+
+            <div class="mediaPlayer">
+              <button>Play video</button>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div class="row">
+          <div class="col col-12 col-lg-6">
+            <h2
+              class="title--badge h6 font-weight-semibold bg-success text-white mb-3"
+            >
+              Features
+            </h2>
+            <p class="h5 font-weight-semibold text-gray-800">
+              Get components and examples, including tons of variables that will
+              help you grow your business.
+            </p>
+            <ul>
+              <li>Perfect for modern startups</li>
+              <li>Fully customizable and scalable</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <div class="mediaPlayer">
+              <button>Play video</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="technology container">
+        <div class="row">
+          <div class="col col-12 col-lg-6 order-lg-2">
+            <h2
+              class="title--badge h6 font-weight-semibold bg-primary text-white mb-3"
+            >
+              Technology
+            </h2>
+            <h3 class="h2 font-weight-semibold text-gray-800 mb-4">
+              We use the latest technologies on the market
+            </h3>
+            <p class="text-gray-600">
+              Get components and examples, including tons of variables that will
+              help you grow your business.
+            </p>
+            <a>See case studies</a>
+          </div>
+
           <div class="col">
             <div>
-              <div>
-                <h3>Manage cards</h3>
-                <button>Add new</button>
-              </div>
-
-              <div>
-                <h5>Mastercard</h5>
-                <div>Active</div>
-                <div>
-                  <h6>Card number</h6>
-                  <p>4358-7421-9256-6682</p>
-                </div>
-                <div>
-                  <h6>Name</h6>
-                  <p>John Snow</p>
-                </div>
-                <div>
-                  <h6>Expiry date</h6>
-                  <p>John Snow</p>
-                </div>
-              </div>
-
-              <div>
-                <ul>
-                  <li>
-                    <h5>Starbucks</h5>
-                    <p>$5,50 USD</p>
-                    <p>Pending - San Francisco, United States</p>
-                  </li>
-                  <li>
-                    <h5>Nike Sports</h5>
-                    <p>$129,00 USD</p>
-                    <p>Pending - Lisbon, Portugal</p>
-                  </li>
-                </ul>
-                <a>View all</a>
-              </div>
+              <h4>Airbnb</h4>
+              <p>4.95 out of 5 stars <span> from 23 reviews</span></p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="tools">
-        <h2>Tools</h2>
-        <h3>We build for designers and developers</h3>
-        <p>
-          Get components and examples, including tons of variables that will
-          help you grow your business.
-        </p>
-
-        <div>
-          <h3>Awesome projects</h3>
-          <ul>
-            <li>
-              <h4>Create the new logo</h4>
-              <div>3:50</div>
-            </li>
-            <li>
-              <h4>Set up the color palette</h4>
-              <div>4:00</div>
-            </li>
-            <li>
-              <h4>Wireframe and prototype</h4>
-              <div>6:50</div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="mediaPlayer">
-          <button>Play video</button>
-        </div>
-      </section>
-
-      <section class="features">
-        <h2>Features</h2>
-        <p>
-          Get components and examples, including tons of variables that will
-          help you grow your business.
-        </p>
-        <ul>
-          <li>Perfect for modern startups</li>
-          <li>Fully customizable and scalable</li>
-        </ul>
-
-        <div class="mediaPlayer">
-          <button>Play video</button>
-        </div>
-      </section>
-
-      <section class="technology">
-        <h2>Technology</h2>
-        <h3>We user the latest technologies on the market</h3>
-        <p>
-          Get components and examples, including tons of variables that will
-          help you grow your business.
-        </p>
-        <a>See case studies</a>
-
-        <div>
-          <div>
-            <h4>Airbnb</h4>
-            <p>4.95 out of 5 stars <span> from 23 reviews</span></p>
-          </div>
-          <div>
             <div>
-              <span>JH</span>
-              <h5>Jimmy Hendrix</h5>
-              <button>Like</button>
+              <div>
+                <span>JH</span>
+                <h5>Jimmy Hendrix</h5>
+                <button>Like</button>
+              </div>
+            </div>
+            <div>
+              <span>Logo</span>
+              <h5>Website UI Kit</h5>
+              <ul>
+                <li>
+                  <span>Mugshot</span>
+                </li>
+                <li>
+                  <span>Mugshot</span>
+                </li>
+                <li>
+                  <span>Mugshot</span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <button>Attach</button>
+                </li>
+                <li>
+                  <button>Seen</button>
+                </li>
+                <li>
+                  <button>Like</button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>300+ components</h5>
+              <p>Built to be customized.</p>
             </div>
           </div>
-          <div>
-            <span>Logo</span>
-            <h5>Website UI Kit</h5>
+        </div>
+      </section>
+
+      <section class="easyToInstall container">
+        <div class="row">
+          <div class="col col-12 col-lg-6">
+            <h2
+              class="title--badge h6 font-weight-semibold bg-warning text-white mb-3"
+            >
+              Easy to install
+            </h2>
+            <h3 class="h2 font-weight-semibold text-gray-800 mb-4">
+              Download, install and run
+            </h3>
+            <p class="text-gray-600">
+              Get components and examples, including tons of variables that will
+              help you grow your business.
+            </p>
             <ul>
               <li>
-                <span>Mugshot</span>
+                <a>
+                  <span>Download on the <span>App Store</span></span>
+                </a>
               </li>
               <li>
-                <span>Mugshot</span>
-              </li>
-              <li>
-                <span>Mugshot</span>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <button>Attach</button>
-              </li>
-              <li>
-                <button>Seen</button>
-              </li>
-              <li>
-                <button>Like</button>
+                <a>
+                  <span>Download on the <span>Play Store</span></span>
+                </a>
               </li>
             </ul>
           </div>
-          <div>
-            <h5>300+ components</h5>
-            <p>Built to be customized.</p>
+          <div class="col">
+            <div class="mediaPlayer">
+              <button>Play video</button>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="easyToInstall">
-        <h2>Easy to install</h2>
-        <p>
-          Get components and examples, including tons of variables that will
-          help you grow your business.
-        </p>
-        <ul>
-          <li>
-            <a>
-              <span>Download on the <span>App Store</span></span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>Download on the <span>Play Store</span></span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="mediaPlayer">
-          <button>Play video</button>
-        </div>
-      </section>
-
-      <section class="cta container">
-        <div>
-          <h3>Infinite solutions</h3>
-          <p>
-            Intuitive markup, powerful and lightning-fast build tools,
-            everything you need to turn your ideas into incredible products.
-          </p>
-          <a>Learn more</a>
+      <section class="container">
+        <div class="row">
+          <div class="col">
+            <div class="callToAction bg-blue-900 text-white">
+              <h3 class="font-weight-semibold">Infinite solutions</h3>
+              <p class="text-blue-50 font-weight-normal">
+                Intuitive markup, powerful and lightning-fast build tools,
+                everything you need to turn your ideas into incredible products.
+              </p>
+              <a class="btn btn-lg btn-light" href="#">Learn more</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <section class="awards">
-      <h2>Awards</h2>
-      <p>Awards for design, creativity and innovation on the Internet</p>
+    <section class="awards container-fluid">
+      <div class="row">
+        <div class="col">
+          <h2
+            class="title--badge h6 font-weight-semibold bg-primary text-white mb-3"
+          >
+            Awards
+          </h2>
+          <p class="h5 font-weight-bold text-gray-800">
+            Awards for design, creativity and innovation on the Internet
+          </p>
+        </div>
+      </div>
 
-      <ul>
-        <li>
-          <a>
-            <h4>Airbnb</h4>
-            <p>4.95 out of 5 stars <span> from 23 reviews</span></p>
-          </a>
-        </li>
-        <li>
-          <a>
-            <h4>Amazon</h4>
-            <p>They build modern looking websites easily using Tabs.</p>
-            <span>Learn more</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <h4>Slack</h4>
-            <p>They build modern looking websites easily using Trello.</p>
-            <span>Learn more</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <h4>Spotify</h4>
-            <p>4.95 out of 5 stars <span> from 23 reviews</span></p>
-          </a>
-        </li>
-        <li>
-          <a>
-            <h4>Paypal</h4>
-            <p>They build modern looking websites easily using Docker.</p>
-            <span>Learn more</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="answers">
-      <h2>Helpul answers</h2>
-      <p>
-        Start building fast, beautiful, and modern-looking websites in no time.
-      </p>
-      <ul>
-        <li>
-          <h5>Which license do I need?</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue, eu
-            porttitor risus lorem id magna.
-          </p>
-        </li>
-        <li>
-          <h5>Which license do I need?</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue, eu
-            porttitor risus lorem id magna.
-          </p>
-        </li>
-        <li>
-          <h5>How do I get access to my database?</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue, eu
-            porttitor risus lorem id magna.
-          </p>
-        </li>
-        <li>
-          <h5>How do I get access to my database?</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue, eu
-            porttitor risus lorem id magna.
-          </p>
-        </li>
-        <li>
-          <h5>How do I see previous orders?</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue, eu
-            porttitor risus lorem id magna.
-          </p>
-        </li>
-        <li>
-          <h5>How do I see previous orders?</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue, eu
-            porttitor risus lorem id magna.
-          </p>
-        </li>
-      </ul>
-
-      <h4>I want to start a new project</h4>
-      <div>
-        <a>Buy now</a>
-        <a>Learn more</a>
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li>
+              <a>
+                <h4>Airbnb</h4>
+                <p>4.95 out of 5 stars <span> from 23 reviews</span></p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h4>Amazon</h4>
+                <p>They build modern looking websites easily using Tabs.</p>
+                <span>Learn more</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h4>Slack</h4>
+                <p>They build modern looking websites easily using Trello.</p>
+                <span>Learn more</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h4>Spotify</h4>
+                <p>4.95 out of 5 stars <span> from 23 reviews</span></p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h4>Paypal</h4>
+                <p>They build modern looking websites easily using Docker.</p>
+                <span>Learn more</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <div>
-        <h3>Brilliant solutions for your ideas</h3>
-        <p>Modern looking websites.</p>
-        <div>
-          <a>Documentation</a>
-          <a>Purchase now</a>
+    <section class="answers container">
+      <div class="row">
+        <div class="col">
+          <h2 class="h3 font-weight-semibold text-center text-gray-800">
+            Helpul answers
+          </h2>
+          <p class="text-center text-gray-600">
+            Start building fast, beautiful, and modern-looking websites in no
+            time.
+          </p>
         </div>
       </div>
-      <div>
-        <h3>Odoo</h3>
-        <p>
-          Odoo attempts to bring the best development experience to designers
-          and developers by offering the tools needed for having a quick and
-          solid start in most web projects.
-        </p>
-        <ul>
-          <li>
-            <a>Dribble</a>
-          </li>
-          <li>
-            <a>Discord</a>
-          </li>
-          <li>
-            <a>Instagram</a>
-          </li>
-          <li>
-            <a>Facebook</a>
-          </li>
-        </ul>
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li>
+              <h5 class="h6 font-weight-semibold">Which license do I need?</h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue,
+                eu porttitor risus lorem id magna.
+              </p>
+            </li>
+            <li>
+              <h5 class="h6 font-weight-semibold">Which license do I need?</h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue,
+                eu porttitor risus lorem id magna.
+              </p>
+            </li>
+            <li>
+              <h5 class="h6 font-weight-semibold">
+                How do I get access to my database?
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue,
+                eu porttitor risus lorem id magna.
+              </p>
+            </li>
+            <li>
+              <h5 class="h6 font-weight-semibold">
+                How do I get access to my database?
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue,
+                eu porttitor risus lorem id magna.
+              </p>
+            </li>
+            <li>
+              <h5 class="h6 font-weight-semibold">
+                How do I see previous orders?
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue,
+                eu porttitor risus lorem id magna.
+              </p>
+            </li>
+            <li>
+              <h5 class="h6 font-weight-semibold">
+                How do I see previous orders?
+              </h5>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas, dui nec lacinia elementum, lorem ipsum pulvinar augue,
+                eu porttitor risus lorem id magna.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <nav>
-          <ul>
-            <h5>Account</h5>
-            <li>
-              <a>Profile</a>
-            </li>
-            <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Billing</a>
-            </li>
-            <li>
-              <a>Notifications</a>
-            </li>
-          </ul>
-          <ul>
-            <h5>About</h5>
-            <li>
-              <a>Services</a>
-            </li>
-            <li>
-              <a>Pricing</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-            <li>
-              <a>Careers</a>
-            </li>
-          </ul>
-          <ul>
-            <h5>Company</h5>
-            <li>
-              <a>Community</a>
-            </li>
-            <li>
-              <a>Help center</a>
-            </li>
-            <li>
-              <a>Support</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <div>
-          <a>Odoo</a>
-          <p>All rights reserved</p>
+      <div class="row">
+        <div class="col">
+          <h4 class="h4 text-center font-weight-semibold text-gray-800">
+            I want to start a new project
+          </h4>
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-lg btn-primary" href="#">Buy now</a>
+            <a class="btn btn-lg btn-light" href="#">Learn more</a>
+          </div>
         </div>
-        <ul>
-          <li>
-            <a>Terms</a>
-          </li>
-          <li>
-            <a>Privacy</a>
-          </li>
-          <li>
-            <a>Cookies</a>
-          </li>
-        </ul>
+      </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>Brilliant solutions for your ideas</h3>
+            <p>Modern looking websites.</p>
+            <div>
+              <a class="btn btn-lg btn-light" href="#">Documentation</a>
+              <a class="btn btn-lg btn-primary" href="#">Purchase now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-12 col-lg-7">
+            <h3>Odoo</h3>
+            <p class="text-gray-100">
+              Odoo attempts to bring the best development experience to
+              designers and developers by offering the tools needed for having a
+              quick and solid start in most web projects.
+            </p>
+            <ul>
+              <li>
+                <a>Dribble</a>
+              </li>
+              <li>
+                <a>Discord</a>
+              </li>
+              <li>
+                <a>Instagram</a>
+              </li>
+              <li>
+                <a>Facebook</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <nav class="row">
+              <ul class="col">
+                <h5 class="h6 font-weight-semibold mb-4">Account</h5>
+                <li>
+                  <a href="#">Profile</a>
+                </li>
+                <li>
+                  <a href="#">Settings</a>
+                </li>
+                <li>
+                  <a href="#">Billing</a>
+                </li>
+                <li>
+                  <a href="#">Notifications</a>
+                </li>
+              </ul>
+              <ul class="col">
+                <h5 class="h6 font-weight-semibold mb-4">About</h5>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+              </ul>
+              <ul class="col">
+                <h5 class="h6 font-weight-semibold mb-4">Company</h5>
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">Help center</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <a>Odoo</a>
+            <p>All rights reserved</p>
+          </div>
+          <ul>
+            <li>
+              <a>Terms</a>
+            </li>
+            <li>
+              <a>Privacy</a>
+            </li>
+            <li>
+              <a>Cookies</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 

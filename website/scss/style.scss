@@ -2,8 +2,32 @@
 @import "../bootstrap/scss/bootstrap.scss";
 @import "../bootstrap/scss/bootstrap-grid.scss";
 
-@import "./test";
+/*FONT*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/*UTILITIES*/
+@import "./font";
+@import "./colors";
+
+/*COMPONENTS*/
+@import "./components/trustingClients";
+@import "./components/cardManager";
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/callToActions";
+@import "./components/footer";
 
 body {
-  color: green;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  width: 100vw;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
 }
