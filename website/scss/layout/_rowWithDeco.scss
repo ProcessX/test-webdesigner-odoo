@@ -1,0 +1,26 @@
+$deco-size: 12rem;
+
+.row--withDeco {
+  position: relative;
+
+  &::before {
+    content: "";
+    height: $deco-size;
+    width: $deco-size;
+    position: absolute;
+    display: block;
+    background-image: url(../assets/deco/dotted-elypsis.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    top: 100%;
+    left: calc(50% - (#{$deco-size}/ 2));
+  }
+
+  &--toLeft {
+    &::before {
+      transform: rotate(-90deg);
+    }
+  }
+}

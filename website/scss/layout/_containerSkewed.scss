@@ -1,0 +1,34 @@
+$skew-angle-bottom: -2deg;
+
+.container--skewed {
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 100%;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: none;
+  }
+
+  &--bottom {
+    &::after {
+      display: block;
+      transform-origin: top right;
+      transform: skewY($skew-angle-bottom);
+    }
+  }
+
+  &--top {
+    &::before {
+      display: block;
+      transform-origin: bottom left;
+      transform: skewY($skew-angle-bottom);
+    }
+  }
+}

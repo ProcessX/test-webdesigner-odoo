@@ -1,0 +1,47 @@
+$star-size: 1.5rem;
+
+.clientReview {
+  transition: $transition-base;
+  transition-property: background-color;
+
+  .clientReview__logo {
+    max-height: 3rem;
+  }
+
+  * {
+    transition: inherit;
+    transition-property: color;
+  }
+
+  .starContainer {
+    .star {
+      content: "";
+      height: $star-size;
+      width: $star-size;
+      background-image: url(../assets/icons/star-gray.svg);
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-size: 100%;
+
+      &--yellow {
+        background-image: url(../assets/icons/star-yellow.svg);
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $primary;
+    box-shadow: $box-shadow-lg;
+    color: red !important;
+
+    * {
+      color: white;
+
+      &::after {
+        background-color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.videoPlayer {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  /*CHILDREN*/
+  * {
+    pointer-events: none;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    border: none;
+  }
+
+  &__thumbnail {
+    transition: $transition-base;
+    transition-property: scale;
+  }
+
+  /*VARIATIONS*/
+  &--sm {
+    max-width: 20rem;
+  }
+
+  &--btnRight {
+    .videoPlayer__btn {
+      left: auto;
+      right: 1rem;
+    }
+  }
+
+  /*EFFECTS*/
+  &:hover {
+    .videoPlayer__btn {
+      background-color: $warning;
+    }
+
+    .videoPlayer__thumbnail {
+      scale: 1.05;
+    }
+  }
+}

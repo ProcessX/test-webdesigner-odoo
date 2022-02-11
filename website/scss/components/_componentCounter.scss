@@ -1,0 +1,11 @@
+$indication-size: 3rem;
+
+.componentCounter {
+  .componentCounter__indication {
+    height: $indication-size;
+    width: $indication-size;
+    border-radius: 50%;
+  }
+  .componentCounter__info {
+  }
+}

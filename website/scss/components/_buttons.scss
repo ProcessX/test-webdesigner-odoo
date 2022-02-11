@@ -1,3 +1,75 @@
+$complementary-icon-size: 0.8em;
+$btn-size-basic: 2.5em;
+$btn-size-large: 3em;
+$icon-only-size: 1em;
+
 .btn {
   font-weight: 600;
+  font-size: 1rem;
+  padding: 0 1.5em;
+  height: $btn-size-basic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1em;
+
+  &-light {
+    background-color: white;
+  }
+
+  &-sm {
+    font-size: 14px;
+    padding: 0 1em;
+  }
+
+  &-lg {
+    padding: 0 2em;
+    height: $btn-size-large;
+  }
+
+  &--white {
+    background-color: white;
+  }
+
+  &--border {
+    border-width: 1px;
+
+    &--white {
+      border-color: $gray-100;
+    }
+  }
+
+  &--icon {
+    .icon {
+      margin-top: 0.1em;
+      margin-left: 0.8em;
+      height: $complementary-icon-size;
+      width: $complementary-icon-size;
+    }
+
+    .icon--arrow {
+      height: $complementary-icon-size * 1.5;
+      width: $complementary-icon-size * 1.5;
+    }
+
+    &--left {
+      .icon {
+        margin-left: 0;
+        margin-right: 0.8em;
+      }
+    }
+  }
+
+  &--iconOnly {
+    width: $btn-size-basic;
+    max-width: $btn-size-basic;
+    max-height: $btn-size-basic;
+    border-radius: 50%;
+    padding: 0;
+
+    .icon {
+      height: $icon-only-size;
+      width: $icon-only-size;
+    }
+  }
 }

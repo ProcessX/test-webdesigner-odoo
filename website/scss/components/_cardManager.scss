@@ -1,5 +1,32 @@
 .cardManager {
+  * {
+    pointer-events: none;
+  }
+
   .cardVisualizer {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+
+    * {
+      grid-column: span 2;
+    }
+
+    &__info--half {
+      grid-column: span 1;
+    }
+
+    .cardNumber {
+      .cardNumber__subsection {
+        color: red;
+
+        &:not(:last-child) {
+          &::after {
+            content: "-";
+          }
+        }
+      }
+    }
   }
 
   .beneficiary__li {

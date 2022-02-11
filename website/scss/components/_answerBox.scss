@@ -1,0 +1,51 @@
+$icon-size: 1em;
+
+.answerBox__li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  align-items: start;
+  * {
+    grid-column: span 1;
+  }
+}
+
+.answerBox {
+  border-radius: $border-radius;
+
+  .answerBox__head {
+    background-color: white;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: $transition-base;
+    transition-property: background-color;
+
+    .icon {
+      height: $icon-size;
+      width: $icon-size;
+    }
+
+    &:hover {
+      background-color: $gray-50;
+    }
+
+    .icon--close {
+      display: none;
+    }
+
+    .icon--open {
+      display: block;
+    }
+  }
+
+  .answerBox__head[aria-expanded="true"] {
+    .icon--close {
+      display: block;
+    }
+
+    .icon--open {
+      display: none;
+    }
+  }
+}

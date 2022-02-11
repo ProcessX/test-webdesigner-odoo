@@ -1,0 +1,25 @@
+$bullet-size: 1rem;
+$bullet-padding: 0.2rem;
+
+.featureList {
+  .feature__el {
+    display: flex;
+
+    .icon {
+      width: $bullet-size;
+      height: $bullet-size;
+      padding: $bullet-padding;
+      background-color: $gray-300;
+      margin-top: $bullet-size / 5;
+      margin-right: $bullet-size;
+      border-radius: $bullet-size / 4;
+    }
+  }
+
+  &--advantages {
+    .feature__el {
+      .icon {
+      }
+    }
+  }
+}

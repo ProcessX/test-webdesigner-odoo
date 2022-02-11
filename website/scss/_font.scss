@@ -4,6 +4,18 @@ body {
   font-size: $rootSize;
 }
 
+.h1,
+.h2,
+.h3,
+.h6 {
+  line-height: 1.44em;
+}
+
+.h4,
+.h5 {
+  line-height: 1.76em;
+}
+
 .font-weight-semibold {
   font-weight: 600;
 }
@@ -16,10 +28,14 @@ body {
   font-size: 0.8rem;
 }
 
+.text-p {
+  line-height: 1.76em;
+}
+
 .title {
   &--badge {
     border-radius: 1em;
-    padding: 0.25em 0.5em;
+    padding: 0.25em 1em;
     display: inline-block;
   }
 }

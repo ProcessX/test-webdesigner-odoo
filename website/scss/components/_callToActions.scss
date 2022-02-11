@@ -1,5 +1,8 @@
 .callToAction {
-  padding: 1.5rem;
   border-top-right-radius: 4rem;
   border-bottom-left-radius: 4rem;
+
+  .callToAction__content {
+    max-width: 30rem;
+  }
 }

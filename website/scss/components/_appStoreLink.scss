@@ -1,0 +1,29 @@
+$logo-size: 2.5rem;
+
+.appStoreLink {
+  text-decoration: none;
+  transition: $transition-base;
+  transition-property: scale, background-color;
+  border-radius: $border-radius;
+  width: min-content;
+
+  * {
+    text-decoration: none !important;
+    line-height: 1em;
+  }
+
+  .logo {
+    height: $logo-size;
+    width: $logo-size;
+    margin-right: 1rem;
+  }
+
+  .appStoreLink__message {
+    width: max-content;
+  }
+
+  &:hover {
+    scale: 1.05;
+    background-color: $gray-800;
+  }
+}

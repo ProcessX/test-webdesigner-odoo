@@ -1,0 +1,23 @@
+$initials-size: 2.5rem;
+
+.profileThumbnail {
+  &__mughshot {
+    max-height: 30rem;
+  }
+
+  &__info {
+    .profileThumbnail__initials {
+      height: $initials-size;
+      width: $initials-size;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}

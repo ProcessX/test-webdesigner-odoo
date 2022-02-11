@@ -8,14 +8,13 @@
 /*UTILITIES*/
 @import "./font";
 @import "./colors";
+@import "./shadows";
 
 /*COMPONENTS*/
-@import "./components/trustingClients";
-@import "./components/cardManager";
-@import "./components/buttons";
-@import "./components/links";
-@import "./components/callToActions";
-@import "./components/footer";
+@import "./components";
+
+/*LAYOUT*/
+@import "./layout";
 
 body {
   font-family: "Inter", sans-serif;
@@ -23,11 +22,21 @@ body {
 }
 
 main {
-  width: 100vw;
+  // width: 100vw;
 }
 
 ul,
 li {
   list-style: none;
   padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }

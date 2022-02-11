@@ -1,2 +1,45 @@
+$social-size: 1.5rem;
+
 footer {
+  .logo {
+    height: 2.5rem;
+    fill: white;
+  }
+  .social__li {
+    .social__el {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      .social__link {
+        transition: $transition-base;
+        transition-property: opacity;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        .social__logo {
+          height: $social-size;
+          width: $social-size;
+        }
+      }
+    }
+  }
+
+  .footer__menu {
+    .footer__link {
+      color: $gray-200;
+      transition: $transition-base;
+      transition-property: opacity;
+
+      &:not(:last-child) {
+        margin-bottom: 0.25rem;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
 }

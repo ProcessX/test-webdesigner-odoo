@@ -1,6 +1,43 @@
+$thick-underline-height: 0.25em;
+
 .link {
+  transition: $transition-base;
+  transition-property: color;
+
   &--dotted {
     text-decoration: underline;
     text-decoration-style: dotted;
+  }
+
+  &--thickUnderline {
+    position: relative;
+    color: $gray-800;
+
+    &::after {
+      content: "";
+      height: $thick-underline-height;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $gray-800;
+      transition: inherit;
+      transition-property: background-color;
+    }
+
+    &:hover {
+      color: $gray-400;
+      &::after {
+        background-color: $gray-400;
+      }
+    }
+
+    &--blue {
+      color: $primary;
+
+      &::after {
+        background-color: $primary;
+      }
+    }
   }
 }
